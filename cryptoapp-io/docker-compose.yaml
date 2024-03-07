@@ -1,0 +1,11 @@
+version: '3.8'
+
+services: 
+  io:
+    environment:
+      NODE_ENV: docker
+    build:
+      context: .
+      dockerfile: ./Dockerfile.io
+    ports:
+      - 8186:3000
